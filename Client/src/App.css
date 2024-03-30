@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+:root{
+  --primaryColor: hsl(94,55%,56%);
+  --hoverColor: hsl(93,75%,76%);
+  --paletGreen: hsl(96,75%,89%);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(0,0%,18%);
+  --greyText: hsl(0,0%,75%);
+  --bgColor: hsl(113,11%,85%);
+  --inputColor: hsl(330,12%,97%);
+ /*--inputColor: hsl(154,14%,90%);*/
+
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize:1.5rem;
+  --h2FontSize:1.2rem;
+  --h3FontSize:1rem;
+  --normalFontSize:.938rem;
+  --smallFontSize:.813rem;
+  --smallestFontSize:.75rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: hsl(0, 0%, 91%);
+}
+
+.btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: .8rem 1rem;
+  color: var(--whiteColor);
+}
+
+.btn .icon{
+  margin-left: .5rem;
+
+}
+
+.btn:hover{
+  color: var(--primaryColor);
+  background: var(--paletGreen);
+}
+
+.form-container{
+  width: 1000px;
+}
+
+.title,
+.slogan{
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  margin: 0 0 2em 0 !important; /* Margen inferior el doble del margen superior */
+}
+
+
+
+
+.btn {
+  padding: .5rem;
+  background: var(--primaryColor);
+  border-radius: 10px;
+  color: var(--whiteColor);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 16px;
+  width: 100%;
+  gap: .5Rem;
+  transition: .5s ease;
+  margin:20px auto ;
+}
+
+.btn .icon {
+  font-size: 25px;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  background: var(--hoverColor);
+  border-color: var(--primaryColor)!important;
+  color: var(--primaryColor)!important;
+}
+
+.btn:hover .icon {
+  color: var(--primaryColor)!important;
+  transform: translateX(5px);
+}
+
+.headerDiv {
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  width: 70px;
+  padding-bottom: .2rem;
+  margin: 0 auto 10px auto;
+}
+
+
+.container {
+  position: relative; 
+  width: 100%;
+  
+}
+
+.title2 {
+  color: white !important; /* Color blanco */
+  position: absolute; /* Posicionamiento absoluto */
+  width: 100%;
+  top: 20px;
+
+  z-index: 1; 
+}
+
+.auth-img {
+  width: 100%; 
+  border-radius: 10px; 
+}
+
+
