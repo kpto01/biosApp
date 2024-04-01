@@ -1,4 +1,5 @@
 import {BiBuilding, BiLogoAndroid, BiLogoHtml5, } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const items =[
     {
@@ -14,25 +15,35 @@ const items =[
     },
     {
         id: 3,
-        title:'Nuevo turno',
+        title:'Registrar Turno',
         icon: <BiBuilding/>,
+        ref: '/Registrar'
     },
 
 ];
 
 const Card = () => {
-  return (
-    <div className="card--container">
-        {items.map((item) =>(
-           <div className="card" key={item.id} >
-            <div className="card--cover">{item.icon}</div>
-            <div className="card--title">
+    return (
+      <div className="card--container">
+        {items.map((item) => (
+          item.ref ? (
+            <Link className="card" key={item.id} to={item.ref}>
+              <div className="card--cover">{item.icon}</div>
+              <div className="card--title">
                 <h2>{item.title}</h2>
+              </div>
+            </Link>
+          ) : (
+            <div className="card" key={item.id}>
+              <div className="card--cover">{item.icon}</div>
+              <div className="card--title">
+                <h2>{item.title}</h2>
+              </div>
             </div>
-           </div> 
+          )
         ))}
-    </div>
-  );
-};
+      </div>
+    );
+  };
 
 export default Card

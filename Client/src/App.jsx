@@ -3,6 +3,7 @@ import './App.css';
 import Dashboard from './Pages/Dashboard';
 import Login from './Auth/login';
 import {useAuth} from './contexts/AuthContext.jsx';
+import Registrar from './Pages/Registrar.jsx';
 
 
 
@@ -18,6 +19,9 @@ const App = () => {
             }/>
           <Route path="/dashboard" element={ 
           isAuthenticated ? <Dashboard /> : <Login /> }/>
+
+          <Route path="/Registrar" element={ 
+          isAuthenticated ? <Registrar /> : <Login /> }/>
             
         </Routes>
     </Router>
